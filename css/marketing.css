@@ -78,6 +78,7 @@ label {
 
 a.pure-button-primary {
     background: white;
+    border: 1px solid #A3A3A3;
     color: #1f8dd6;
     border-radius: 5px;
     font-size: 120%;
@@ -109,14 +110,17 @@ a.pure-button-primary {
     color: black;
     font-weight: 400;
     font-size: 120%;
+    display: inline-block;
 }
 
 .home-menu .pure-menu-selected a {
-    color: white;
+    color: #A3A3A3;
+    display: inline-block;
 }
 
 .home-menu a {
     color: #6FBEF3;
+    display: inline-block;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
@@ -231,6 +235,18 @@ a.pure-button-primary {
     vertical-align: middle;
     padding-top: 7%;
 }
+
+#my_work {
+    margin-top: -50px;
+    border-bottom: 1px solid #A3A3A3;
+}
+
+#my_work_content {
+    vertical-align: middle;
+    padding-top: 3%;
+}
+
+
 
 /* This is the class used for the footer */
 .footer {

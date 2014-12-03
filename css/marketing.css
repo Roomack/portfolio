@@ -12,6 +12,7 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 13px;
+    font-family: 'Oswald';
 }
 
 h1,
@@ -136,7 +137,7 @@ a.pure-button-primary {
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 80%;
+    height: 65%;
     top: 0;
     left: 0;
     position: fixed !important;
@@ -179,7 +180,7 @@ a.pure-button-primary {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 75%;
+    top: 65%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
@@ -197,7 +198,7 @@ a.pure-button-primary {
 
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
-    color: white;
+    color: black;
 }
 
 /* This is the class used for the content sub-headers (<h3>) */
@@ -213,6 +214,22 @@ a.pure-button-primary {
     /*background: #2d3e50;*/
     background: white;
     color: #aaa;
+}
+
+.sub-heading {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 0px;
+}
+
+#my_life {
+    margin-top: -50px;
+    border-bottom: 1px solid #A3A3A3;
+}
+
+#my_life_content {
+    vertical-align: middle;
+    padding-top: 7%;
 }
 
 /* This is the class used for the footer */

@@ -77,9 +77,9 @@ label {
 }
 
 a.pure-button-primary {
-    background: white;
-    border: 1px solid #A3A3A3;
-    color: #1f8dd6;
+    background: #393939;
+    border: 1px solid white;
+    color: #66CCFF;
     border-radius: 5px;
     font-size: 120%;
 }
@@ -109,6 +109,7 @@ a.pure-button-primary {
     border-bottom: 1px solid #D1D1D1;
     /* I need a higher z-index here because of the scroll-over effect. */
     z-index: 4;
+    opacity: .8;
 }
 
 .home-menu .pure-menu-heading {
@@ -120,7 +121,7 @@ a.pure-button-primary {
 }
 
 .home-menu .pure-menu-selected a {
-    color: #A3A3A3;
+    color: #B8E65C;
     display: inline-block;
 }
 
@@ -145,12 +146,18 @@ a.pure-button-primary {
     /*background: #99CCFF;*/
     /*background: #66CCFF;*/
     /*background: #B8E65C;*/
-    background: black;
+    /*background: black;*/
+     background: url("../img/kc_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 70%;
+    height: 75%;
     top: 0;
     left: 0;
     position: fixed !important;
@@ -162,28 +169,30 @@ a.pure-button-primary {
     height: 50%;
     margin: auto;
     position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
+    top: 0px; left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: uppercase;
 }
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 20px;
+    /*font-size: 20px;*/
     font-weight: bold;
     color: #B8E65C;
     border: 3px solid #B8E65C;
-    padding: 1em 1.6em;
+    /*padding: 1em 1.6em;*/
+    /*padding: 1em .8em;*/
+    /*vertical-align: middle;*/
     font-weight: 100;
     border-radius: 5px;
     line-height: 1em;
+    background: black;
 }
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
-    color: #B8E65C;
+    color: white;
     letter-spacing: 0.05em;
-    opacity: 0.8;
 }
 
 /*
@@ -193,7 +202,7 @@ a.pure-button-primary {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 65%;
+    top: 75%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
@@ -203,10 +212,11 @@ a.pure-button-primary {
 
 /* This is the class used for the main content headers (<h2>) */
 .content-head {
+    font-size: 4em;
+    font-family: 'Oswald';
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 2em 0 1em;
+    margin: 1em 0 1em;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
@@ -235,16 +245,26 @@ a.pure-button-primary {
     /*background: #A3A3A3;*/
 }
 
+#portrait {
+    margin-bottom: -1.5em;
+}
+
 #my_life {
-    margin-top: -50px;
+    margin-top: -.5em;
     border-bottom: 1px solid #A3A3A3;
     background: #66CCFF;
+    padding-top: 0px;
     /*background: #D1D1D1;*/
 }
 
+#my_life_heading {
+    color: #393939;
+}
+
 #my_life_content {
+    padding-top: 2%;
     vertical-align: middle;
-    padding-top: 7%;
+    color: white;
 }
 
 #my_work {
@@ -252,16 +272,24 @@ a.pure-button-primary {
     border-bottom: 1px solid #A3A3A3;
 }
 
+#my_work_heading {
+    text-shadow: 2px 2px gray;
+    text-align: center;
+    color: #393939;
+    margin-bottom: 2em;
+}
 #my_work_content {
     vertical-align: middle;
     padding-top: 3%;
 }
 
 #my_channels {
-    background: #D1D1D1;
+       background: url("../img/kc_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
-
 
 /* This is the class used for the footer */
 .footer {
@@ -325,6 +353,6 @@ a.pure-button-primary {
 @media (min-width: 78em) {
     /* We increase the header font size even more */
     .splash-head {
-        font-size: 300%;
+        font-size: 225%;
     }
 }

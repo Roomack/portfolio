@@ -284,11 +284,22 @@ a.pure-button-primary {
 }
 
 #my_channels {
-       background: url("../img/kc_background.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
+}
+
+#facebook {
+    background: black;
+    text-align: center;
+}
+
+#linkedin {
+    background:black;
+    text-align: center;
+}
+
+#email {
+    background: black;
+    text-align: center;
 }
 
 /* This is the class used for the footer */
@@ -309,7 +320,7 @@ a.pure-button-primary {
     }
     /* We want to give the content area some more padding */
     .content {
-        padding: 1em;
+      /*  padding: 1em;*/
     }
 
     /* We can align the menu header to the left, but float the

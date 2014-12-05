@@ -5,7 +5,7 @@ $(document).on('ready', function() {
   })
 
   $('#facebook').on('mouseout', function () {
-    $('#facebook').css("background", "black")
+    $('#facebook').css("background", "#393939")
   })
 
   $('#linkedin').on('mouseover', function () {
@@ -13,15 +13,23 @@ $(document).on('ready', function() {
   })
 
   $('#linkedin').on('mouseout', function () {
-    $('#linkedin').css("background", "black")
+    $('#linkedin').css("background", "#393939")
   })
 
   $('#email').on('mouseover', function () {
-    $('#email').css("background", "#B8E65C")
+    $('#email').css("background", "purple")
   })
 
   $('#email').on('mouseout', function () {
-    $('#email').css("background", "black")
+    $('#email').css("background", "#393939")
+  })
+
+   $('#github').on('mouseover', function () {
+    $('#github').css("background", "#B8E65C")
+  })
+
+  $('#github').on('mouseout', function () {
+    $('#github').css("background", "#393939")
   })
 
 });

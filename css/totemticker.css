@@ -19,9 +19,6 @@
   #wrapper a, #footer a{color:#e8914c; text-decoration:none; border-bottom:1px dotted #e8914c;}
     #wrapper a:hover, #footer a:hover{color:#eab209; border-bottom:1px dotted #eab209;}
 
-
-#footer{margin-top:20px; text-transform:uppercase; font-size:11px; letter-spacing:1px;}
-  #footer p{color:rgba(255,255,255,.5);}
 /*
 
   This is the only semi-important stuff for plugin installation
@@ -29,7 +26,7 @@
 */
 
 #vertical-ticker{
-  height:100px;
+  height:70px;
   overflow:hidden;
   margin:0; padding:0;
   -webkit-box-shadow:0 1px 3px rgba(0,0,0, .4);
@@ -40,9 +37,15 @@
     display:block;
     background: #B8E65C;
     color:black;
-   /* border-bottom:1px solid #ddd;*/
     text-align:center;
-    /*font-size:25px;*/
     font-weight:bold;
     font-family: 'Oswald', serif;
+  }
+
+  @media (min-width: 48em) {
+
+    #vertical-ticker {
+      height: 100px;
+    }
+
   }

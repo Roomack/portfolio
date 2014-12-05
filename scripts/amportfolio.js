@@ -9,7 +9,7 @@ $(document).on('ready', function() {
   })
 
   $('#linkedin').on('mouseover', function () {
-    $('#linkedin').css("background", "#D1D1D1")
+    $('#linkedin').css("background", "#0099CC")
   })
 
   $('#linkedin').on('mouseout', function () {

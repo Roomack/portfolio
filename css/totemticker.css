@@ -38,8 +38,8 @@
   #vertical-ticker li{
     padding:35px 20px;
     display:block;
-    background:black;
-    color:#B8E65C;
+    background: #B8E65C;
+    color:black;
    /* border-bottom:1px solid #ddd;*/
     text-align:center;
     /*font-size:25px;*/

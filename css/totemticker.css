@@ -26,7 +26,7 @@
 */
 
 #vertical-ticker{
-  height:90px;
+  height:70px;
   overflow:hidden;
   margin:0; padding:0;
   -webkit-box-shadow:0 1px 3px rgba(0,0,0, .4);
@@ -34,9 +34,10 @@
 
   #vertical-ticker li{
     padding:35px 20px;
-    display:block;
-    background: #B8E65C;
-    color:black;
+    display: block;
+    /*background: rgba(184, 230, 92, .9);*/
+    background: #B8E62E;
+    color: #393939;
     text-align:center;
     font-weight:bold;
     font-family: 'Oswald', Arial;

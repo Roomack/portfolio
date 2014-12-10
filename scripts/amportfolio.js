@@ -1,59 +1,27 @@
 $(document).on('ready', function() {
 
-  $('#facebook').on('mouseover', function () {
-    $('#facebook').css("background", "#4c66a4")
-  })
+  $('#facebook').hover(
+    function() { colorChange($(this), "#4C66A4") },
+    function() { colorChange($(this), "#393939") }
+  );
 
-  $('#facebook').on('mouseout', function () {
-    $('#facebook').css("background", "#393939")
-  })
+  $('#linkedin').hover(
+    function() { colorChange($(this), "#0099CC") },
+    function() { colorChange($(this), "#393939") }
+  );
 
-  $('#linkedin').on('mouseover', function () {
-    $('#linkedin').css("background", "#0099CC")
-  })
+  $('#email').hover(
+    function() { colorChange($(this), "black") },
+    function() { colorChange($(this), "#393939") }
+  );
 
-  $('#linkedin').on('mouseout', function () {
-    $('#linkedin').css("background", "#393939")
-  })
-
-  $('#email').on('mouseover', function () {
-    $('#email').css("background", "purple")
-  })
-
-  $('#email').on('mouseout', function () {
-    $('#email').css("background", "#393939")
-  })
-
-   $('#github').on('mouseover', function () {
-    $('#github').css("background", "#B8E65C")
-  })
-
-  $('#github').on('mouseout', function () {
-    $('#github').css("background", "#393939")
-  })
-
-  $('.rmc').on('mouseover', function() {
-    $('.rmc_label').css("color", "#B8E65C")
-  })
-
-  $('.rmc').on('mouseout', function() {
-    $('.rmc_label').css("color", "#393939")
-  })
-
-  $('.shield_ED').on('mouseover', function() {
-    $('.shield_ED_label').css("color", "#B8E65C")
-  })
-
-  $('.shield_ED').on('mouseout', function() {
-    $('.shield_ED_label').css("color", "#393939")
-  })
-
-  $('.roomack').on('mouseover', function() {
-    $('.roomack_label').css("color", "#B8E65C")
-  })
-
-  $('.roomack').on('mouseout', function() {
-    $('.roomack_label').css("color", "#393939")
-  })
+  $("#github").hover(
+    function() { colorChange($(this), "#B8E65C") },
+    function() { colorChange($(this), "#393939") }
+  );
 
 });
+
+  function colorChange(element, color) {
+    $(element).css("background", color);
+  };

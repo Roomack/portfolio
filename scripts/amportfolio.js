@@ -32,4 +32,28 @@ $(document).on('ready', function() {
     $('#github').css("background", "#393939")
   })
 
+  $('.rmc').on('mouseover', function() {
+    $('.rmc_label').css("color", "#B8E65C")
+  })
+
+  $('.rmc').on('mouseout', function() {
+    $('.rmc_label').css("color", "#393939")
+  })
+
+  $('.shield_ED').on('mouseover', function() {
+    $('.shield_ED_label').css("color", "#B8E65C")
+  })
+
+  $('.shield_ED').on('mouseout', function() {
+    $('.shield_ED_label').css("color", "#393939")
+  })
+
+  $('.roomack').on('mouseover', function() {
+    $('.roomack_label').css("color", "#B8E65C")
+  })
+
+  $('.roomack').on('mouseout', function() {
+    $('.roomack_label').css("color", "#393939")
+  })
+
 });

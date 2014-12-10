@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a responsive product landing page.">
 
-    <title>Andrew McClellan &ndash; Portfolio &ndash; Pure</title>
+    <title>Andrew McClellan &ndash; Portfolio &ndash;</title>
 
     <link rel="stylesheet" href="css/pure-min.css">
 
@@ -40,12 +40,11 @@
     <div class="header">
         <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
             <a class="pure-menu-heading" href="">andrew<span class = "last_name">Mcclellan</a>
-
             <ul>
                 <li class="pure-menu-selected"><a href="#">Home</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Life</a></li>
-                <li><a href="#">Email</a></li>
+                <li><a href="#my_life">Life</a></li>
+                <li><a href="#my_work">Work</a></li>
+                <li><a href="mailto:andrew.mcclellan3@gmail.com">Email</a></li>
             </ul>
         </div>
     </div>
@@ -57,115 +56,89 @@
                 <ul id="vertical-ticker">
                     <li>Junior Developer</li>
                     <li>Dev Bootcamp Grad</li>
-                    <li>Sci-Fi Nerd</li>
-                    <li>Travel Addict</li>
-                    <li>Restless Eater</li>
                     <li>Home Sweet KC</li>
+                    <li>Travel Addict</li>
+                    <li>Sci-Fi Nerd</li>
+                    <li>Restless Eater</li>
                     <li>History Buff</li>
                     <li>Dog Lover</li>
                     <li>Ocean Lounger</li>
                     <li>Pool Shooter</li>
-                    <li>TDs > Homeruns</li>
                     <li>Uncle x 8</li>
                 </ul>
               </div>
             </h1>
-            <p class="splash-subhead">
-                Changing the world. One click at a time..
-            </p>
-
+            <p class="splash-subhead">Who you callin' "junior"?</p>
         </div>
     </div>
 
-<!--************************* BODY *************************** -->
-
     <div class="content-wrapper">
 
-<!-- ********************* MY LIFE ************************** -->
-
-        <!-- <h1 class = "sub-heading"> My Life </h1> -->
-        <div class="ribbon l-box-lrg pure-g", id = "my_life">
-            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-                <img class="pure-img-responsive" id="portrait" alt="My Picture" src="img/cropped_background_5.png">
+        <div class="ribbon l-box-lrg pure-g", id = "my_life"><a name = "my_life"></a>
+            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1 pure-u-lg-12-24">
+                <img class="pure-img-responsive" id="portrait" alt="My Picture" src="img/portrait_final.jpg">
             </div>
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5", id = "my_life_content">
+            <div class="pure-u-1 pure-u-md-1-1 pure-u-lg-12-24", id = "my_life_content">
 
                 <h1 class="content-head content-head-ribbon", id = "my_life_heading">
-                    <span class="brackets">{</span> My Life <span class="brackets">}</span></h1>
-
+                    <span class="brackets">{</span> About Me <span class="brackets">}</span></h1>
+                <h1 class="content-head content-head-ribbon">Not your typical developer...</h1>
                 <p>
-                    "Guided by a passion for leadership, my adult career has been spent leading diverse teams with a variety of missions.  As a manager, I found that one of the greatest obstacles in helping my teams improve was a lack of quality, easy-to-use applications .  Fueled by the desire to fill this gap, and an even greater affection for programming and design, I’m excited to transition into a career that will allow me to make the most of my work experience while focusing on my true passion: creating beautiful and useful things."
-
+                    After 8+ years of managing business operations for several different companies, I’ve finally given in to my true passion and am happily marching towards a new career in web development. Boosted by my recent graduation from <a class="DBC_Link" href="http://www.devbootcamp.com">Dev Bootcamp</a>, I’m eager to continue growing my skills as part of an innovative and welcoming company. Not your typical web developer, I look to be more than just a coder by using my prior work experience to help a team grow and succeed.
                 </p>
-                <p>
+                <p class="button_p">
                     <a href="img/Andrew_McClellan_Resume.pdf" class="pure-button pure-button-primary">Resume</a>
                 </p>
             </div>
         </div>
 
-<!-- ********************* MY WORK ************************** -->
-
-
-        <!-- <h1 class = "sub-heading"> My Work </h1> -->
-        <div class="ribbon l-box-lrg pure-g" id = "my_work">
+        <div class="ribbon l-box-lrg pure-g" id = "my_work"><a name="my_work"></a>
 
             <div class="pure-u-1 pure-u-md-1 pure-u-lg-1", id = "my_work_content">
                 <h1 class="content-head content-head-ribbon", id = "my_work_heading">
                     <span class="brackets">{</span> My Work <span class="brackets">}</span></h1>
-                <!-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor.
-                </p> -->
             </div>
 
-
-
-            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-3 pure-u-lg-1-3 project_div">
-                <a href="http://www.ryanmcclellanconst.com"><img class="pure-img-responsive project rmc" alt="File Icons" width="350" src="img/rmc_8.jpg">
-                <h3 class="project_name">Construction Website</h3></a>
+            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1 pure-u-lg-1-3 project_div rmc">
+                <a href="http://www.ryanmcclellanconst.com"><img class="pure-img-responsive project" alt="File Icons" width="350" src="img/rmc_8.jpg">
+                <h3 class="project_name rmc_label">Const/Remodel Site</h3></a>
             </div>
 
-            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-3 pure-u-lg-1-3 project_div">
+            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1 pure-u-lg-1-3 project_div shield_ED">
                 <a href="http://github.com/gopher-snakes-2014/shieldED"><img class="pure-img-responsive project" alt="File Icons" width="325" src="img/shield_ED_7.jpg">
-                <h3 class="project_name">Fight Back Against Bullies</h3></a>
+                <h3 class="project_name shield_ED_label">Anti-Bullying App</h3></a>
             </div>
 
-            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-3 pure-u-lg-1-3 project_div">
+            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1 pure-u-lg-1-3 project_div roomack">
                 <a href="http://github.com/roomack"><img class="pure-img-responsive project" alt="File Icons" width="350" src="img/github_8.jpg">
-                <h3 class="project_name">DBC Coding Projects</h3></a>
+                <h3 class="project_name roomack_label">DBC Coding Projects</h3></a>
             </div>
 
         </div>
 
         <div class="content", id = "my_channels">
-            <!-- <h2 class="content-head is-center">My Channels</h2> -->
-            <!-- <h2 class = "sub-heading">My Channels</h2> -->
-
             <div class="pure-g">
-
                 <div class="l-box pure-u-1 pure-u-md-1-4 pure-u-lg-1-4" id="facebook">
                     <a href = "https://www.facebook.com/mcclellan2">
-                        <img class = "pure-img-responsive" alt="Facebook" width="250" src = "img/facebook_white.png">
+                        <img class = "pure-img-responsive" alt="Facebook" width="150" src = "img/facebook_white.png">
                     </a>
                 </div>
 
                 <div class="l-box pure-u-1 pure-u-md-1-4 pure-u-lg-1-4" id="linkedin">
                     <a href = "https://www.linkedin.com/in/amcclellan3/">
-                        <img class = "pure-img-responsive" alt="LinkedIn" width="250" src = "img/linkedin_white.png">
+                        <img class = "pure-img-responsive" alt="LinkedIn" width="150" src = "img/linkedin_white.png">
                     </a>
                 </div>
 
                 <div class="l-box pure-u-1 pure-u-md-1-4 pure-u-lg-1-4" id="email">
                     <a href = "mailto:andrew.mcclellan3@gmail.com">
-                        <img class = "pure-img-responsive" alt="Email" width="250" src = "img/email_white.png">
+                        <img class = "pure-img-responsive" alt="Email" width="150" src = "img/email_white.png">
                     </a>
                 </div>
 
                 <div class="l-box pure-u-1 pure-u-md-1-4 pure-u-lg-1-4" id="github">
                     <a href = "http://github.com/roomack">
-                        <img class = "pure-img-responsive" alt="Github" width="250" src = "img/github_white.png">
+                        <img class = "pure-img-responsive" alt="Github" width="150" src = "img/github_white.png">
                     </a>
                 </div>
 
@@ -173,7 +146,7 @@
         </div>
 
         <div class="footer l-box is-center">
-            View the source of this layout to learn more. Made with love by the YUI Team.
+            Andrew McClellan&nbsp&nbsp-&nbsp&nbspJunior Web Developer&nbsp&nbsp-&nbsp&nbspKansas City, MO
         </div>
 
     </div>

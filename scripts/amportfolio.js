@@ -1,21 +1,21 @@
 $(document).on('ready', function() {
 
-  $('#facebook').hover(
+  $('.facebook').hover(
     function() { bgroundChange($(this), "#4C66A4") },
     function() { bgroundChange($(this), "#393939") }
   );
 
-  $('#linkedin').hover(
+  $('.linkedin').hover(
     function() { bgroundChange($(this), "#0099CC") },
     function() { bgroundChange($(this), "#393939") }
   );
 
-  $('#email').hover(
+  $('.email').hover(
     function() { bgroundChange($(this), "black") },
     function() { bgroundChange($(this), "#393939") }
   );
 
-  $("#github").hover(
+  $(".github").hover(
     function() { bgroundChange($(this), "#B8E65C") },
     function() { bgroundChange($(this), "#393939") }
   );

@@ -34,18 +34,18 @@
 
   #vertical-ticker li{
     padding:35px 20px;
-    display:block;
-    background: #B8E65C;
-    color:black;
+    display: block;
+    background: #B8E62E;
+    color: #393939;
     text-align:center;
     font-weight:bold;
-    font-family: 'Oswald', serif;
+    font-family: 'Oswald', Arial;
   }
 
   @media (min-width: 48em) {
 
     #vertical-ticker {
-      height: 100px;
+      height: 110px;
     }
 
   }

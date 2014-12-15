@@ -1,35 +1,46 @@
 $(document).on('ready', function() {
 
-  $('#facebook').on('mouseover', function () {
-    $('#facebook').css("background", "#4c66a4")
-  })
+  $('.facebook').hover(
+    function() { bgroundChange($(this), "#4C66A4") },
+    function() { bgroundChange($(this), "#393939") }
+  );
 
-  $('#facebook').on('mouseout', function () {
-    $('#facebook').css("background", "#393939")
-  })
+  $('.linkedin').hover(
+    function() { bgroundChange($(this), "#0099CC") },
+    function() { bgroundChange($(this), "#393939") }
+  );
 
-  $('#linkedin').on('mouseover', function () {
-    $('#linkedin').css("background", "#0099CC")
-  })
+  $('.email').hover(
+    function() { bgroundChange($(this), "black") },
+    function() { bgroundChange($(this), "#393939") }
+  );
 
-  $('#linkedin').on('mouseout', function () {
-    $('#linkedin').css("background", "#393939")
-  })
+  $(".github").hover(
+    function() { bgroundChange($(this), "#B8E65C") },
+    function() { bgroundChange($(this), "#393939") }
+  );
 
-  $('#email').on('mouseover', function () {
-    $('#email').css("background", "purple")
-  })
+  $(".rmc").hover(
+    function() { colorChange('.rmc_label', "#B8E65C") },
+    function() { colorChange('.rmc_label', "#393939") }
+  );
 
-  $('#email').on('mouseout', function () {
-    $('#email').css("background", "#393939")
-  })
+  $(".shield_ED").hover(
+    function() { colorChange('.shield_ED_label', "#B8E65C") },
+    function() { colorChange('.shield_ED_label', "#393939") }
+  );
 
-   $('#github').on('mouseover', function () {
-    $('#github').css("background", "#B8E65C")
-  })
-
-  $('#github').on('mouseout', function () {
-    $('#github').css("background", "#393939")
-  })
+  $(".roomack").hover(
+    function() { colorChange('.roomack_label', "#B8E65C") },
+    function() { colorChange('.roomack_label', "#393939") }
+  );
 
 });
+
+function bgroundChange(element, color) {
+  $(element).css("background", color);
+};
+
+function colorChange(element, color) {
+  $(element).css("color", color);
+};
